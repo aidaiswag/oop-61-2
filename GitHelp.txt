@@ -2,3 +2,31 @@
 git config --global user.name "aidaiswag"
 git config --global user.email "madambekovaaidai@gmail.com"
 
+Команды для регистрации ваших данных
+пишутся один на ПК
+git config --global user.name "arzy-54-2"
+git config --global user.email "some_emal@gmail.com"
+============================================================
+Пишутся один раз на проект
+git init
+git remote add origin https://github.com/arzy-54-2/oop-61-2.git
+===============================================================
+
+
+
+
+
+
+git status
+нужно создать файл .gitignore
+git add .
+git add путь\название файла или директории
+git commit -m "same text"
+git push origin master
+git rm -r название файла или директории
+
+git branch    посмотерть ветки
+git branch название_ветки
+
+git merge название ветки
+
