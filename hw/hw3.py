@@ -1,32 +1,32 @@
 #Инкапсуляция
-# class Product:
-#         def __init__(self, name, price, discount):
-#             self.name = name
-#             self._price = price
-#             self.__discount = discount
-#
-#         def get_price(self):
-#             return self._price * (1-self.__discount/100)
-#
-#         def set_discount(self, percent):
-#             if percent <= 50:
-#                 self.__discount = percent
-#             return "Скидка больше 50%!"
-#
-#         def apply_extra_discount(self, secret_code):
-#             if secret_code == "VIP123":
-#                 self.__discount += 5
-#             return "Неверный код!"
-#
-# a = Product("DiStore Advent Calendar", 35000, 15)
-#
-# print("Цена со скидкой:", a.get_price())
-#
-# a.apply_extra_discount("VIP123")
-# print("Цена после VIP:", a.get_price())
-#
-# print(a.apply_extra_discount("HAPPY NEW YEAR"))
-# print("Цена итоговая:", a.get_price())
+class Product:
+        def __init__(self, name, price, discount):
+            self.name = name
+            self._price = price
+            self.__discount = discount
+
+        def get_price(self):
+            return self._price * (1-self.__discount/100)
+
+        def set_discount(self, percent):
+            if percent <= 50:
+                self.__discount = percent
+            return "Скидка больше 50%!"
+
+        def apply_extra_discount(self, secret_code):
+            if secret_code == "VIP123":
+                self.__discount += 5
+            return "Неверный код!"
+
+a = Product("DiStore Advent Calendar", 35000, 15)
+
+print("Цена со скидкой:", a.get_price())
+
+a.apply_extra_discount("VIP123")
+print("Цена после VIP:", a.get_price())
+
+print(a.apply_extra_discount("HAPPY NEW YEAR"))
+print("Цена итоговая:", a.get_price())
 
 
  #Абстракция
