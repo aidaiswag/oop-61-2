@@ -30,3 +30,38 @@ git branch название_ветки
 
 git merge название ветки
 
+git switch название ветки        для переключение на ветку
+git checkout название ветки
+
+git checkout -b название ветки
+git switch -c название ветки    для создания ветки и переключения на нее
+
+prod
+
+reseal
+
+python
+py                -m venv name_venv
+python3
+
+
+.venv\Scripts\activate        - Для Винды
+source .venv/bin/activate     - Для мака или линукс
+
+test
+stage|dev|test
+dev
+
+feat/login
+feat/register
+feat/comment
+
+
+git commit -m "feat: fjdnfhaudhcuah"
+git commit -m "update: fbvgaedjckanlsjkdx"
+git commit -m "fix: hdfejwdbhjwe"
+git commit -m "hotfix: "
+
+git restore путь         откат изменений
+git reset пть            удаление после git add
+git reset --mixed HEAD~1   удаление последнего коммита
